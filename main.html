@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Click Photobooth Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="page-wrapper">
+
+        <!-- SIDEBAR (Fixed ID & Class) -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <a href="main.html">Home</a>
+            <a href="products-and-services-index.html">Products & Services</a>
+            <a href="gallery-index.html">Gallery</a>
+            <a href="contact-us-index.html">Contact Us</a>
+        </div>
+
+        <header class="header">
+            <nav class="nav">
+                <a href="main.html" class="nav-item">Home</a>
+                <a href="products-and-services-index.html" class="nav-item nav-item--wide">Products & Services</a>
+                <a href="gallery-index.html" class="nav-item">Gallery</a>
+                <a href="contact-us-index.html" class="nav-item contact-btn tilt-btn">Contact Us</a>
+                
+                <!-- HAMBURGER BUTTON BESIDE CONTACT US -->
+                <span class="hamburger" onclick="toggleNav()">&#9776;</span>
+            </nav>
+        </header>
+
+        <section id="hero-section">
+            <img src="images/background_banner.png" alt="cafe interior banner" class="banner-img">
+
+            <div class="hero-content">
+                <img src="images/logo.png" alt="Click Click logo" class="logo-img">
+                <a href="#your-target-link">
+                  <img src="images/polaroid.png" alt="Come Visit Us" class="polaroid-img">
+                </a>
+            </div>
+        </section>
+        
+        <p id="tagline-strip">Find your clique in every click</p>
+
+        <section id="services" class="maroon-section">
+            <h2>Cafe, photobooth, rental all in one!</h2>
+
+            <div id="services-grid">
+                <div class="service-img service-img--1">
+                    <img src="images/photobooth.png" alt="Click Click photobooth entrance">
+                </div>
+                <div class="service-img service-img--2">
+                    <img src="images/shelves.png" alt="cafe shelves and decor">
+                </div>
+                <div class="service-img service-img--3">
+                    <img src="images/tables.png" alt="cafe seating and counter">
+                </div>
+            </div>
+
+            <div id="info-grid">
+                <div class="info-block">
+                    <h4>Hours</h4>
+                    <p>Monday &ndash; Sunday<br>10am &ndash; 10pm</p>
+                </div>
+                <div class="info-block">
+                    <h4>Location</h4>
+                    <p>2nd Floor, Qidel Ink Building,<br>
+                       Ledesma St, Iloilo City Proper,<br>
+                       Iloilo City, Iloilo</p>
+                </div>
+                <div class="info-block">
+                    <h4>Price range</h4>
+                    <p>&#8369;115 &ndash; &#8369;215</p>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="gallery" class="cream-section">
+            <h2>Available vinyls</h2>
+            <div id="vinyl-grid">
+                <div class="vinyl"><img src="images/laufey_vinyl.png" alt="Laufey vinyl record cover"></div>
+                <div class="vinyl"><img src="images/christmas_vinyl.png" alt="Jose Mari Chan Christmas In Our Hearts vinyl record cover"></div>
+                <div class="vinyl"><img src="images/abba_vinyl.png" alt="ABBA Gold vinyl record cover"></div>
+                <div class="vinyl"><img src="images/ahh_vinyl.png" alt="vinyl record cover"></div>
+                <div class="vinyl"><img src="images/showgirl_vinyl.png" alt="The Life of a Showgirl vinyl record cover"></div>
+                <div class="vinyl"><img src="images/braid_vinyl.png" alt="vinyl record cover"></div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <p class="footer-tag">✦ Lights, Camera... Click, Click! ✦</p>
+            <ul class="contact-list">
+                <li><span class="icon">&#9742;</span> 09696 74200</li>
+                <li><span class="icon">&#9993;</span> click.click.photoboothcafe@gmail.com</li>
+                <li><span class="icon">f</span> Click.Click</li>
+                <li><span class="icon">&#9673;</span> click.click.photoboothcafe</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById("mySidenav");
+
+            // Toggle width without shifting page content
+            if (nav.style.width === "280px") {
+                nav.style.width = "0";
+            } else {
+                nav.style.width = "280px";
+            }
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
